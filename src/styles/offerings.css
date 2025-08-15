@@ -1,0 +1,35 @@
+.offerings-page {
+  text-align: center;
+}
+
+.offerings-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2.2em 0 1.5em 0;
+  justify-content: center;
+}
+
+.offering-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 3px 14px rgba(0, 90, 200, 0.07);
+  padding: 2rem 1.3rem;
+  width: 270px;
+  margin-bottom: 1.1rem;
+  animation: fadeUp 0.8s cubic-bezier(0.36,1.14,0.62,1.00);
+}
+.offering-icon {
+  font-size: 2.6rem;
+  display: block;
+  margin-bottom: 0.5em;
+}
+.offering-card h2 {
+  margin: 0 0 0.5em 0;
+  font-size: 1.22rem;
+  color: #144b86;
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(32px);}
+  to { opacity: 1; transform: none;}
+}

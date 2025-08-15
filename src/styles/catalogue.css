@@ -1,0 +1,46 @@
+.tag-filter {
+  display: flex;
+  gap: 0.7rem;
+  margin: 1.2rem 0;
+  flex-wrap: wrap;
+}
+.tag-filter__item {
+  border: none;
+  padding: 0.5em 1.25em;
+  border-radius: 18px;
+  font-weight: 600;
+  background: #f4f7fa;
+  color: #31508a;
+  cursor: pointer;
+  transition: background 0.3s, color 0.2s, transform 0.15s;
+}
+.tag-filter__item.active, .tag-filter__item:active, .tag-filter__item:focus {
+  background: #04c9df;
+  color: #fff;
+  transform: scale(1.06);
+  box-shadow: 0 2px 8px rgba(4,201,223,0.15);
+}
+.catalogue-header {
+  text-align: center;
+  margin-bottom: 1.3em;
+}
+.catalogue-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.1em;
+}
+.catalogue-subhead {
+  color: #777;
+  margin: 0.5em 0 1.2em 0;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+.card-animator {
+  animation: fadeUp 0.7s cubic-bezier(0.33,0.88,0.49,1.1);
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(35px);}
+  to { opacity: 1; transform: none;}
+}

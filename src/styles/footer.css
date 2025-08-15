@@ -1,0 +1,27 @@
+.footer {
+  background: #f5f8fa;
+  color: #31508a;
+  padding: 1.3rem 0 0.7rem 0;
+  text-align: center;
+  border-top: 1px solid #d6e1ef;
+  font-size: 1.05rem;
+  box-shadow: 0 -1px 6px rgba(20,60,120,0.07);
+}
+.footer .footer__section {
+  margin-bottom: 0.4rem;
+}
+.footer__credits {
+  margin-left: 14px;
+  font-size: 0.95em;
+  color: #bdccee;
+}
+.footer__links a {
+  color: #0673ce;
+  margin: 0 4px;
+  text-decoration: none;
+  transition: color 0.18s;
+}
+.footer__links a:hover {
+  color: #04c9df;
+  text-decoration: underline;
+}

@@ -1,0 +1,50 @@
+.home-hero {
+  background: linear-gradient(100deg, #0470dc 0%, #04c9df 100%);
+  color: #fff;
+  min-height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: fadeIn 1s;
+}
+.home-hero__content {
+  padding: 2rem 1rem 2.5rem 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  animation: popIn 0.7s cubic-bezier(0.44,0.86,0.57,1.06);
+}
+.brand-name {
+  font-size: 2.1rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+.home-hero h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0.7em 0 0.45em 0;
+}
+.tagline {
+  font-size: 1.14rem;
+  margin-bottom: 1.6em;
+  color: rgba(255,255,255,0.88);
+}
+.home-hero__cta {
+  display: inline-block;
+  background: #fff;
+  color: #0470dc;
+  font-weight: 700;
+  padding: 0.8em 2em;
+  border-radius: 2em;
+  font-size: 1.05rem;
+  text-decoration: none;
+  box-shadow: 0 5px 18px rgba(4,201,223,0.14);
+  transition: background 0.3s, color 0.23s;
+  margin-top: 1.2em;
+}
+.home-hero__cta:hover {
+  background: #04c9df;
+  color: #fff;
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes popIn { from { opacity:0; transform: translateY(30px) scale(0.96);} to { opacity:1; transform: none;} }

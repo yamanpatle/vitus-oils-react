@@ -1,0 +1,32 @@
+/* Navbar styles */
+.app-nav {
+  background: var(--brand-secondary);
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  border-bottom: 1px solid var(--accent);
+}
+.app-nav a {
+  color: #fff; padding: 10px 16px; text-decoration: none; font-weight: bold; border-radius: 6px 6px 0 0;
+}
+.app-nav a:hover { background: var(--brand-primary); }
+.app-nav a.active { background: var(--brand-primary); }
+.navbar {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  font-size: 1.1rem;
+}
+.navbar a {
+  color: #31508a;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.3em 0;
+  transition: color 0.18s;
+  border-bottom: 2px solid transparent;
+  position: relative;
+}
+.navbar a.active, .navbar a:hover {
+  color: #0078de;
+  border-bottom: 2px solid #04c9df;
+}
